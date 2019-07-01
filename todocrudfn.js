@@ -20,13 +20,14 @@ const writeToFile = (text) => {
     const data = readFromFile();
     if(!data) {
         jsonData.push({
-            id: 1,
+            id: Math.ceil(Math.random()*10),
             text: text
         });
     } else {
-        const json = JSON.parse(data)
-        const newId = json.length;
+        const json = JSON.parse(data);
+        const newId = Math.ceil(Math.random()*10);
         jsonData = [ ... json ];
+
         jsonData.push({
             id: newId,
             text
@@ -56,30 +57,44 @@ const edit =(idd,txt)=>{
 const Done = (idd) => {
     const data = readFromFile();
     const json = JSON.parse(data);
-    if(idd > (json.length-1) ){
-        console.log("invalid entry");
-    }else{
-        delete json[idd];
+   
+    for(i in json){
+        
+        const val =Object.values(json[i]);
+        const val1=val[0];
+        const val2=val[1];
+        // console.log(val);
          
-         fs.writeFileSync(config.todo_file, JSON.stringify(json), 'utf-8');
+      
+      var newjson = json.filter(function(id1) {
+        return id1.id!=idd;
+      });
+      
          
-
-    }
 }
+console.log(newjson);
+
+fs.writeFileSync(config.todo_file, JSON.stringify(newjson), 'utf-8');
+}
+    
 //function to display list
 const list =() => {
     const data = readFromFile();
-    const json = JSON.parse(data);
+    let json = JSON.parse(data);
     
     // console.log(json);
     // console.log(JSON.stringify(json));
     var c=0;
     for(i in json)
     {
-        for (j in i){
+        if(json[i]!= null){
      console.log(Object.values(json[i]) +" ");
+        }
+        else{
+            console.log("null value");
+        }
         
-         }
+        //  }
        
     }
    

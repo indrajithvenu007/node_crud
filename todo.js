@@ -18,8 +18,6 @@ $ node todo.js edit <id> <text>
     console.log(text);
     return;
 }
-
-
 if (args.length < 3) {
     printHelp();
     process.exit(1);
@@ -32,15 +30,6 @@ const opText = args[4];
 // const config = {
 //     todo_file: "./todo.list.json"
 // };
-
-
-
-
-
-
-
-
-
 // start 
 switch(op) {
     case 'add': {

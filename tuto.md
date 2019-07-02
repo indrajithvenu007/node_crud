@@ -88,12 +88,22 @@ ECMAScript is a scripting -language specification standardized by ECMA internati
 
 <h3>Features Of ES6.</h3>
 
--   let is preferred over var in ES6. Variables decalred by let have their scope
-    within the block they are defined.
+-   let is preferred over var in ES6. Variables decalred by let have their scope within the block they are defined.
 
--   ES6 also introduced a new variable keyword: const . Variables declared with the **const **keyword are block scoped just like l**et **however they cannot change by reassignment and they cannot be re-declared; they are immutable.
+        for (let i = 0; i < a.length; i++) {
+                let x = a[i]
+                …
+        }
+
+-   ES6 also introduced a new variable keyword: const . Variables declared with the const keyword are block scoped just like let however they cannot change by reassignment and they cannot be re-declared; they are immutable.
+
+        const PI = 3.141593
 
 -   The for/of loop uses the iterable protocol to create a loop. Strings, Arrays, Typed Arrays , map, Set, NodeList and custom iterable function hook can all be used with for/of .
+
+        for (var value of myArray) {
+        console.log(value);
+        }
 
 -   Template literals are very handy for string that use variable , or need to make use of a quick javaScript expression. Template literals are enclosed with in back ticks.template literals can also have place holders, these are declared with a dollar sign and curly braces
 
@@ -101,7 +111,16 @@ ECMAScript is a scripting -language specification standardized by ECMA internati
 
 -   Arrow functions, they are a shorthand syntax for functions that do not contain its own this, arguments, super, or new.target and cannot be used as constructors.
 
+        // ES5
+        var x = function(x, y) {
+         return x * y;
+        }
+        // ES6
+        const x = (x, y) => x * y;
+
 -   Spread operator allows an iterable such as an array expression or string to be expanded in places where zero or more arguments or elements are expected , or an object expression to be expanded in places where zero or more key-value pairs are expected.
+
+        let objClone = { ...obj };
 
 -   Getters and setters allow read and write access to class properties without having to define methods. Getters and setters are accessible by inherited classes.
 
@@ -120,7 +139,7 @@ The node package manager (NPM) provides access to hundreds of thousands of reusa
 
 After answering the prompts you’ll see something like the following in a new package.json file:
 
-A simple node application can be viewed here : https://github.com/indrajithvenu007/node_crud
+A simple node application can be viewed here https://github.com/indrajithvenu007/node_crud
 
 <h3>Steps to create a node application</h3>
 
@@ -130,10 +149,12 @@ A simple node application can be viewed here : https://github.com/indrajithvenu0
 4.  With in our project directory , create a file named server.js,  this file will contain the code for our application.
 5.  After this , first thing to do is get the server up and running. For this purpose we use Express. Express is a webframework for Node.js .
 
--   To use express, first install Express using , npm install --save express
+-   To use express, first install Express using , 
+        
+        npm install --save express
 -   then we have to require express in our js file then, we create an instance named app by invoking Express as given below.
 
-    const express = require(‘express’)
+        const express = require(‘express’)
 
 
 
@@ -142,7 +163,7 @@ A simple node application can be viewed here : https://github.com/indrajithvenu0
  
         app.listen(port, ()=&gt;{console.log(\`App running on port ${port}\`)})
 
-    We can test our server by running,
+-   We can test our server by running,
 
         node server.js
 

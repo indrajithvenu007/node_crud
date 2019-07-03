@@ -5,6 +5,8 @@ HTML (Hyper Text Markup Language) is the code that is used to structure a web pa
  All HTML documents must start with a document type declaration : &lt;!DOCTYPE html&gt;. The HTML document itself begins with &lt;html&gt; tag and ends with &lt;/html&gt;. The visible part of the HTML document is given between &lt;body&gt; tag and ends with &lt;/body&gt;. Each tag is contained with in a less than and a greater than angle brackets, and everything between opening and closing tag is displayed or affected by the tag. An image of a simple html document is given below.
 
 The box above contains the key ingredients for a basic web page. The first line (DOCTYPE) describes what version of HTML was written in so that an internet browser can interpret the text that follows. Next, the HTML opening tags lets the browser know that it is reading HTML code. The HTML tag is followed by the head section which contains the information about the page such as its title , meta tags, and where to locate the CSS file. The body section is all content that is viewable on the browser. HTML files uses eithe .htm or .html file extensions. Details about various HTML tags can be found here : <https://html-css-js.com/html/tags/> .
+
+HTML5 in detail : https://scrimba.com/g/ghtml
 </div>
 
 <h2>JAVASCRIPT</h2>
@@ -45,6 +47,8 @@ The latest ECMAScript standard defines eight data types:
     -   Symbol
 
 -   objects
+
+refer more about javascript on : https://scrimba.com/g/gintrotojavascript
 
 <h3>Objects in JavaScript</h3>
 
@@ -123,6 +127,8 @@ ECMAScript is a scripting -language specification standardized by ECMA internati
         let objClone = { ...obj };
 
 -   Getters and setters allow read and write access to class properties without having to define methods. Getters and setters are accessible by inherited classes.
+
+ES6 in detail : https://scrimba.com/g/gintrotoes6
 
 <h2>Node Js</h2>
 

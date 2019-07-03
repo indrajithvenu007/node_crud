@@ -1,6 +1,6 @@
 <h2>HTML</h2
 <div>
-HTML (Hyper Text Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. HTML is not a programming language; it is a **markup language** **that defines the structure of your content.
+HTML (Hyper Text Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. HTML is not a programming language; it is a markup language that defines the structure of your content.
 
  All HTML documents must start with a document type declaration : &lt;!DOCTYPE html&gt;. The HTML document itself begins with &lt;html&gt; tag and ends with &lt;/html&gt;. The visible part of the HTML document is given between &lt;body&gt; tag and ends with &lt;/body&gt;. Each tag is contained with in a less than and a greater than angle brackets, and everything between opening and closing tag is displayed or affected by the tag. An image of a simple html document is given below.
 

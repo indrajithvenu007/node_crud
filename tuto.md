@@ -21,6 +21,14 @@ JavaScript is case sensitive and uses the unicode character set. In JavaScript, 
 
 Comments behave like whitespace and are discarded during script execution. The box below contains single line comment and multi line comment.
 
+        // This is a single line JavaScript comment
+
+        /* this is multiline comments
+        document.write("You can't see this!");
+        document.write("You can't see this!");
+        document.write("You can't see this!");
+        document.write("You can't see this!");*/
+
 <h3>Declarations in JavaScript</h3>
 
 There are three kinds of declarations in JavaScript.
